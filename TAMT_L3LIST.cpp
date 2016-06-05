@@ -20,7 +20,7 @@ class List
 public:
 	List() : root(nullptr), last_el(0) {};
 
-	/* \func void add(int i, int data_v){} добавление элемента перед заданным индексом (начиная с 0) */
+/* \func void add(int i, int data_v){} РґРѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РїРµСЂРµРґ Р·Р°РґР°РЅРЅС‹Рј РёРЅРґРµРєСЃРѕРј (РЅР°С‡РёРЅР°СЏ СЃ 0) */
 	void add(int i, int data_v)
 	{
 		if (i > last_el)
@@ -46,7 +46,7 @@ public:
 		last_el++;
 		return;
 	}
-	/* \func int get(int i){} Получение значения элемента по индексу i */
+	/* \func int get(int i){} РџРѕР»СѓС‡РµРЅРёРµ Р·РЅР°С‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РїРѕ РёРЅРґРµРєСЃСѓ i */
 	int get(int i)
 	{
 		if (i >= last_el)
@@ -62,7 +62,7 @@ public:
 			return next_->data;
 		}
 	}
-	/* \func void del(int i){} удалениe элемента перед заданным индексом i */
+	/* \func void del(int i){} СѓРґР°Р»РµРЅРёe СЌР»РµРјРµРЅС‚Р° РїРµСЂРµРґ Р·Р°РґР°РЅРЅС‹Рј РёРЅРґРµРєСЃРѕРј i */
 	void del(int i)
 	{
 		ListObj* prev_ = nullptr; ListObj* next_ = root;
@@ -78,7 +78,7 @@ public:
 		last_el--;
 		return;
 	}
-	/* \func void print(){} печать содержимого списка*/
+	/* \func void print(){} РїРµС‡Р°С‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ СЃРїРёСЃРєР°*/
 	void print()
 	{
 		ListObj* thisObj = root;
