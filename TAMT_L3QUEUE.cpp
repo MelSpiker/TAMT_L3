@@ -9,14 +9,14 @@ class Queue
 public:
 	Queue(std::vector<int> q_v) : q(q_v), last_el(-1) {};
 
-	/* \func void add(int data){} добавлениe элемента */
+/* \func void add(int data){} РґРѕР±Р°РІР»РµРЅРёe СЌР»РµРјРµРЅС‚Р° */
 	void add(int data)
 	{
 		last_el++;
 		q[last_el] = data;
 		return;
 	}
-	/* \func void del(){} удалениe элемента */
+	/* \func void del(){} СѓРґР°Р»РµРЅРёe СЌР»РµРјРµРЅС‚Р° */
 	void del()
 	{
 		std::vector<int> newQ = q;
@@ -26,12 +26,12 @@ public:
 		last_el--;
 		return;
 	}
-	/* \func int get(){} Получение значения первого на выход элемента */
+	/* \func int get(){} РџРѕР»СѓС‡РµРЅРёРµ Р·РЅР°С‡РµРЅРёСЏ РїРµСЂРІРѕРіРѕ РЅР° РІС‹С…РѕРґ СЌР»РµРјРµРЅС‚Р° */
 	int get()
 	{
 		return q[0];
 	}
-	/* \func void print(){} печать содержимого очереди в данный момент */
+	/* \func void print(){} РїРµС‡Р°С‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ РѕС‡РµСЂРµРґРё РІ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ */
 	void print()
 	{
 		for (int i = 0; i < last_el + 1; i++)
